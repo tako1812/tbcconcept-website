@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+@font-face {
+  font-family: "Helvatica";
+  src: url("../css/HelveticaNeue.ttc") format("truetype");
+}
+body {
+  font-family: "Helvatica";
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+/**************************/
+/* HEADER */
+/**************************/
+.header {
+  min-width: 34rem;
+}
+.header-countainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+
+  height: 8rem;
+  padding: 0 2.8rem;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.nav-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
+.tbc-logo {
+  height: 3rem;
+  color: #555f62;
+}
+.search-icon {
+  border: none;
+  background: none;
+  height: 2rem;
+  width: 2rem;
+  color: #555f62;
+}
+.arrow-icon {
+  height: 1.5rem;
+  width: 2rem;
+  color: #182cc0;
+}
+.nav-cta {
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  color: #182cc0;
+}
+
+/* STICKY NAVIGATION */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.97);
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+/* CHECKBOX */
+.navigation-checkbox {
+  display: none;
+}
+.navigation-button {
+  background-color: #fff;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  z-index: 2000;
+  box-shadow: 0 1rem 3rem rgba(black, 1);
+}
+/*
+.navigation-background {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  background-image: radial-gradient(#fff, #999);
+  z-index: 1000;
+
+  transform: scale(80);
+}*/
+.navigation-nav {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1500;
+
+  opacity: 0;
+  width: 0;
+}
+
+.navigation-list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+}
+
+.navigation-checkbox:checked ~ .navigation-background {
+  transform: scale(80);
+}
+.navigation-checkbox:checked ~ .navigation-nav {
+  opacity: 1;
+  width: 100%;
+}
+
+/*NAVIGATION ICON*/
+.navigation-icon {
+  position: relative;
+  margin-top: 1.8rem;
+}
+.navigation-icon,
+.navigation-icon::before,
+.navigation-icon::after {
+  width: 2rem;
+  height: 2px;
+  display: inline-block;
+  background-color: #333;
+}
+.navigation-icon::before,
+.navigation-icon::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  transition: all 1s;
+}
+.navigation-icon::before {
+  width: 1.5rem;
+  top: -0.8rem;
+}
+.navigation-icon::after {
+  width: 1.5rem;
+  top: 0.8rem;
+}
+/*ICONS ROTATE*/
+.navigation-checkbox:checked + .navigation-button .navigation-icon {
+  background-color: transparent;
+}
+.navigation-checkbox:checked + .navigation-button .navigation-icon::before {
+  top: 0;
+  transform: rotate(45deg);
+  width: 2rem;
+}
+.navigation-checkbox:checked + .navigation-button .navigation-icon::after {
+  top: 0;
+  transform: rotate(-45deg);
+  width: 2rem;
+}
+/**************************/
+/* HERO */
+/**************************/
+.section-hero {
+  margin-top: 15rem;
+  /*padding: 8rem;*/
+  background-color: #555f6227;
+}
+.hero {
+  background-color: #555f62;
+  height: 70rem;
+}
+.hero1 {
+  background-color: black;
+  height: 70rem;
+}
