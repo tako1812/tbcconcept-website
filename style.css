@@ -5,6 +5,7 @@
 }
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 @font-face {
   font-family: "Helvatica";
@@ -15,6 +16,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+  overflow-x: hidden;
 }
 /**************************/
 /* HEADER */
@@ -101,9 +103,9 @@ body {
   right: 6.5rem;
   background-image: radial-gradient(#fff, #999);
   z-index: 1000;
-
+  
   transform: scale(80);
-}*/
+  }*/
 .navigation-nav {
   height: 100vh;
   position: fixed;
@@ -178,15 +180,23 @@ body {
 /* HERO */
 /**************************/
 .section-hero {
-  margin-top: 15rem;
+  margin-top: 6rem;
   /*padding: 8rem;*/
   background-color: #555f6227;
 }
-.hero {
-  background-color: #555f62;
-  height: 70rem;
+.container-primary {
+  background-color: #f9fafa;
+  padding: 5rem 0 5rem 3rem;
 }
-.hero1 {
-  background-color: black;
-  height: 70rem;
+.countainer-primary-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.75px;
+  color: #555f62;
+}
+.hero {
+  height: 50vh;
+  background-image: url(img/hero-image.png);
+  background-size: cover;
+  background-position: top;
 }
