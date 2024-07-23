@@ -18,3 +18,12 @@ const headerObserver = new IntersectionObserver(stickyNav, {
   threshold: 0,
 });
 headerObserver.observe(header);
+
+//slider
+const slide = document.querySelectorAll(".slide");
+const slider = document.querySelector(".slider");
+
+slide.forEach((s, i) => (s.style.transform = `translateX(${100 * i}%)`));
+
+/*slider.style.overflow = "visible";
+slider.style.transform = "scale(0.4)translateX(-100px)";*/

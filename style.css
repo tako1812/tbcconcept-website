@@ -264,8 +264,8 @@ body {
   margin: 6rem 0 3rem 0;
   min-width: 34rem;
 }
-.heading-package {
-  font-size: 1.8rem;
+.heading-secondary {
+  font-size: 1.4rem;
   font-weight: 700;
   padding: 0 3rem;
   color: #141719;
@@ -339,15 +339,20 @@ body {
   color: #131212;
 }
 /**************************/
-/* achievemnts */
+/* Offers */
 /**************************/
-.countainer-offers {
+.slider {
   min-width: 34rem;
-  display: grid;
-  grid-template-columns: 1fr;
+  height: 35rem;
   padding: 3rem;
-
   position: relative;
+  overflow: hidden;
+}
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100;
+  height: 50rem;
 }
 .offer-img {
   width: 90%;
@@ -359,7 +364,7 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  transform: translate(-63%, 70%);
+  transform: translate(-40%, 30%);
 }
 .offer-content {
   display: flex;
@@ -377,4 +382,58 @@ body {
   font-weight: 700;
   line-height: 1.5;
   color: #141313;
+}
+.header-countainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+/**************************/
+/* DIGITAL BANK */
+/**************************/
+.section-digital {
+  min-width: 34rem;
+}
+.countainer-digital {
+  padding: 3rem;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+.digital-img {
+  width: 80%;
+}
+.digital-text-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+.digital-text {
+  font-size: 1.2rem;
+  line-height: 1;
+  letter-spacing: 0.6px;
+}
+.digital-button {
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 1.2rem 12rem;
+  text-transform: uppercase;
+  color: #182cc0;
+  background-color: #f9fafa;
+  border: 1px solid #182cc0;
+}
+/**************************/
+/* PACKAGE DETAIL*/
+/**************************/
+
+.section-package-detail {
+  min-width: 34rem;
+}
+.package-img-detail {
+  width: 90%;
+  border-radius: 5px;
 }
