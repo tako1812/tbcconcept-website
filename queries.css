@@ -1,0 +1,21 @@
+/**************************/
+/* BELOW 704px (Smaller tablets)*/
+/**************************/
+@media (min-width: 44em) {
+  .tbc-logo {
+    display: none;
+  }
+  .tbc-logo-large {
+    width: 14em;
+    display: block;
+  }
+  .header-countainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+
+    height: 8rem;
+    padding: 0 1rem 0 0.5rem;
+  }
+}
