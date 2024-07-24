@@ -371,14 +371,14 @@ body {
   min-width: 34rem;
 }
 .countainer-digital {
-  padding: 3rem;
+  padding: 0 2rem 4rem 2rem;
 
   display: grid;
   grid-template-columns: 1fr;
   gap: 2.5rem;
 }
 .digital-img {
-  width: 80%;
+  width: 90%;
 }
 .digital-text-box {
   width: 100%;
@@ -404,11 +404,55 @@ body {
 /**************************/
 /* PACKAGE DETAIL*/
 /**************************/
-
 .section-package-detail {
-  min-width: 34rem;
 }
-.package-img-detail {
+.slider-countainer {
+  height: 34rem;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+.slide-feature-second {
+  position: absolute;
+  top: 0;
   width: 90%;
+  height: 50rem;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.121);
+}
+.slide-img {
+  width: 100%;
   border-radius: 5px;
+}
+.slide-content-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem 2rem 0 1rem;
+}
+.package-category {
+  color: #141719;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+.package-content {
+  font-size: 1.2rem;
+  line-height: 1;
+  letter-spacing: 0.075px;
+}
+.heading {
+  margin-bottom: 1.5rem;
+}
+/**************************/
+/* PERSONAL BANKER*/
+/**************************/
+.section-personalBanker {
+  padding: 6rem 0;
+}
+.hero {
+  height: 80vh;
+  background-image: url(img/personal-banker.png);
+  background-size: cover;
+  background-position: top;
+  position: relative;
 }
