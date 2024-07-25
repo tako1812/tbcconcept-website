@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Helvatica";
+  src: url("../css/HelveticaNeue.ttc") format("truetype");
+}
 * {
   margin: 0;
   padding: 0;
@@ -7,10 +11,7 @@ html {
   font-size: 62.5%;
   overflow-x: hidden;
 }
-@font-face {
-  font-family: "Helvatica";
-  src: url("../css/HelveticaNeue.ttc") format("truetype");
-}
+
 body {
   font-family: "Helvatica";
   line-height: 1;
@@ -460,8 +461,8 @@ body {
   position: relative;
 }
 /**************************/
-/* AWARDS */
-/**************************/
+/*      AWARDS           */
+/************************/
 .awards-countainer {
   min-width: 34rem;
   padding: 0 4rem 0 2rem;
@@ -489,4 +490,51 @@ body {
 }
 .company-title {
   font-size: 1.2rem;
+}
+/**************************/
+/*    dropdown nav       */
+/************************/
+.footer {
+  padding: 5rem 0;
+}
+.sideNav {
+  min-width: 34rem;
+}
+.dropdown-btn {
+  border: none;
+  text-decoration: none;
+  width: 100%;
+  padding: 3rem 3rem;
+  background-color: #fff;
+
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #5555554f;
+}
+.dropdown-btn span {
+  font-size: 2.3rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+
+.dropdown-list-countainer {
+  width: 100%;
+  padding: 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #fff;
+}
+.dropdown-list-countainer a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: #555;
+}
+.dropdown-icon-rotate {
+  transform: rotate(180deg);
+}
+.dropdown-countainer {
+  display: none;
 }
