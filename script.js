@@ -14,7 +14,6 @@ slideFeature.forEach((s, i) => (s.style.transform = `translateX(${100 * i}%)`));
 /***************************************/
 /* NAV Dropdown */
 /****************************************/
-
 const dropdownBtn = document.querySelectorAll(".dropdown-btn");
 const dropdownIcon = document.querySelector(".dropdown-icon");
 //
