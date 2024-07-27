@@ -1,0 +1,53 @@
+/**************************/
+/* BELOW 704px (Smaller tablets)*/
+/**************************/
+@media (min-width: 38em) {
+  .tbc-logo {
+    display: none;
+  }
+  .tbc-logo-large {
+    width: 14em;
+    display: block;
+  }
+  .header-countainer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+
+    height: 8rem;
+    padding: 0 1rem 0 0.5rem;
+  }
+  /*
+  .section-hero {
+    min-width: 30em;
+  }*/
+  .hero-countainer {
+    padding: 0 3rem;
+    background-color: #f9fafa;
+  }
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 80%;
+    padding: 0 2rem;
+  }
+  .section-package-concept {
+    padding: 6rem 2rem;
+  }
+  .about-package {
+    font-size: 2.8rem;
+  }
+  .package-img {
+    width: 70%;
+  }
+  .package-countainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .package123 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+  }
+}

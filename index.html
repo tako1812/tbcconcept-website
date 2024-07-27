@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!--   ეს ჭირდება
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta
+      name="description"
+      content="Omnifood is an AI-powered food subscription that will make you eat healthy aga"
+      />
+      -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="queries.css">
+    <script defer src="script.js"></script>
+
+    <link rel="tbcBank icon" href="img/images.png">
+    <title>თიბისი კონცეპტი</title>
+  </head>
+  <body>
+    <header class="header sticky">
+      <div class="header-countainer">
+        <div>
+          <a href="#">
+            <img class="tbc-logo-large" src="img/tbc-concept-img.jpg">
+          </a>
+          <a href="#">
+            <img class="tbc-logo" src="img/tbc-logo.png">
+          </a>
+        </div>
+        <nav class="main-nav">
+          <a href="#">
+            <ion-icon class="search-icon" name="search"></ion-icon>
+          </a>
+          <div>
+            <a class="btn-arrow-box">  
+              <ion-icon class="arrow-icon" name="arrow-forward-outline"></ion-icon>
+              <p class="btn-text">გამოიწერეთ ნაკრები<p>
+            </a>
+            </div>
+            <!--
+            <div class="main-nav">
+              <ul class="main-nav-list">
+                <li><a class="main-nav-link" href="#">პროდუქტები</a></li>
+                <li><a class="main-nav-link" href="#">შეთავაზებები</a></li>
+                <li><a class="main-nav-link" href="#">კონცეპტის სივრცე</a></li>
+              </ul>
+            </div>
+            -->
+            <div class="navigation">
+              <input type="checkbox" class="navigation-checkbox" id="navi-toggle">
+              <label for="navi-toggle" class="navigation-button">
+                <span class="navigation-icon">&nbsp;</span>
+              </label>
+              
+              <div class="navigation-background">&nbsp;</div>
+              
+
+              <nav class="navigation-nav">
+                <ul class="navigation-list">
+                  <li class="navigation-item"><a href="#" class="navigation-link">პროდუქტები</a> </li>
+                  <li class="navigation-item"><a href="#" class="navigation-link">შეთავაზებები</a> </li>
+                  <li class="navigation-item"><a href="#" class="navigation-link">კონცეპტ სივრცე</a> </li>
+                </ul>
+              </nav>
+            </div>
+        </nav>
+      </div>
+      </header>
+    <main>
+      <!-- 
+        <button class="icon-nav-menu-countainer">
+          <div class="icon-menu"></div>
+          <div class="icon-menu"></div>
+          <div class="icon-menu"></div>
+          <ion-icon class="icon-menu-close"name="close"></ion-icon>
+        </button>
+        -->
+        <section class="section-hero">
+          <div class="container-primary">
+              <p class="countainer-primary-text">მთავარი</p>
+          </div>
+          <div class="hero-countainer">
+            <div class="hero">
+              <div class="hero-text-box">
+                <h1 class="heading-primary">თიბისი კონცეპტი</h1>
+                <p class="description">პერსონალური საბანკო მომსახურება, მორგებული თქვენს საჭიროებებსა და ინტერესებს</p>
+                <button class="btn-cta">
+                  <a class="btn-arrow-box" href="#">  
+                    <ion-icon class="arrow-icon arrow-icon-btn" name="arrow-forward-outline"></ion-icon>
+                    <p class="btn-text">გამოიწერეთ<p>
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>  
+        </section>
+        <section class="section-package-concept">
+          <div class="countainer grid">
+            <p class="about-package">გამოიწერე თიბისი კონცეპტის ნაკრები და ისარგებლე როგორც საბანკო, ისე არასაბანკო უპირატესობებით<p>
+          </div>
+        </section>
+        <section class="section-package">
+          <div class="heading-countainer">
+            <h2 class="heading-secondary">შეარჩიეთ ნაკრები<h2>
+          </div>
+          <div class="package-countainer">
+            <div class="package countainer ">
+              <img class="package-img"src="img/package img/package-img-1.png" rel="">
+              <div class="package-text-box">
+                <h3 class="heading-tertiary">ციფრული</h3>
+                <div class="btn-arrow-box">
+                  <ion-icon class="arrow-icon-package" name="arrow-forward-outline"></ion-icon>
+                  <a class="package-cta">იხილეთ მეტი</a>
+                </div>
+              </div>
+            </div>
+            <div class="package123 countainer">
+              <img class="package-img"src="img/package img/package-img-2.png" rel="">
+              <div class="package-text-box">
+                <h3 class="heading-tertiary">360</h3>
+                <div class="btn-arrow-box">
+                  <ion-icon class="arrow-icon-package" name="arrow-forward-outline"></ion-icon>
+                  <a class="package-cta">იხილეთ მეტი</a>
+                </div>
+              </div>
+            </div>
+            <div class="package countainer">
+              <img class="package-img"src="img/package img/package-img-3.png" rel="">
+              <div class="package-text-box">
+                <h3 class="heading-tertiary">პრემიუმი</h3>
+                <div class="btn-arrow-box">
+                  <ion-icon class="arrow-icon-package" name="arrow-forward-outline"></ion-icon>
+                  <a class="package-cta">იხილეთ მეტი</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-results">
+          <div class="countainer-results">
+            <div class="result-box">
+              <p class="amount">94 750</p>
+              <p class="result-type">მომხმარებელი</p>
+            </div>
+            <div class="result-box">
+              <p class="amount">150+</p>
+              <p class="result-type">ღონისძიება</p>
+            </div>
+            <div class="result-box">
+              <p class="amount">130+</p>
+              <p class="result-type">შეთავაზება</p>
+            </div>
+          </div>
+        </section>
+        <section class="section-offers">
+          <div class="heading-countainer">
+            <h2 class="heading-secondary">შეთავაზებები</h2>
+            <div class="btn-arrow-box">
+              <ion-icon class="offers-arrow" name="arrow-forward-outline"></ion-icon>
+              <a class="btn-text">ყველა შეთავაზება</a>
+            </div>
+          </div>
+          <div class="slider-counatiner">
+            <div class="slider">
+              <div class="slide">
+                <div class="slider-content">
+                  <img class="offer-img" src="img/offers-img/offers-img-1.png">
+                  <div class="offer-content">
+                    <p class="offer-category">ინვესტიციები</p>
+                    <h3 class="offer-description">MP დეველოპმენტი - აშშ და ევროს ობლიგაციები</h3>
+                  </div>
+                </div> 
+              </div> 
+    
+              <div class="slide">
+                <div class="slider-content">
+                  <img class="offer-img" src="img/offers-img/offers-img-1.png">
+                  <div class="offer-content">
+                    <p class="offer-category">ინვესტიციები</p>
+                    <h3 class="offer-description">MP დეველოპმენტი - აშშ და ევროს ობლიგაციები</h3>
+                  </div>
+                </div>  
+              </div>
+              <div class="slide">
+                <div class="slider-content">
+                  <img class="offer-img" src="img/offers-img/offers-img-1.png">
+                  <div class="offer-content">
+                    <p class="offer-category">ინვესტიციები</p>
+                    <h3 class="offer-description">MP დეველოპმენტი - აშშ და ევროს ობლიგაციები</h3>
+                  </div>
+                </div>  
+              </div>
+              <div class="slide">
+                <div class="slider-content">
+                  <img class="offer-img" src="img/offers-img/offers-img-1.png">
+                  <div class="offer-content">
+                    <p class="offer-category">ინვესტიციები</p>
+                    <h3 class="offer-description">MP დეველოპმენტი - აშშ და ევროს ობლიგაციები</h3>
+                  </div>
+                </div>  
+              </div>
+            </div>  
+          </div>
+        </section>
+        <section class="section-digital">
+          <div class="heading-countainer ">  
+            <h2 class="heading-secondary">ციფრული ბანკი</h2>
+          </div>
+          <div class="countainer-digital">
+            <img class="digital-img"src="img/digitalBank-img.png">
+            <div class="digital-text-box">
+              <p class="digital-text">შეასრულე საბანკო ოპერაციები დისტანციურად, ციფრული ბანკის დახმარებით</p>
+              <button class="digital-button">download</button>
+            </div>
+          </div>
+        </section>
+        <section class="section-package-detail">
+          <div class="heading-countainer">
+            <h2 class="heading-secondary">პროდუქტები</h2>
+          </div>
+          <div class="slider-countainer">
+            <div class="slide-feature-second">
+              <img class="slide-img" src="img/package img/package-img-1.png">
+              <div class="slide-content-box">
+                <h3 class="package-category">ციფრული<h3>
+                <p class="package-content">თიბისი კონცეპტის ციფრული ნაკრები განკუთვნილია მათთვის, ვისთვისაც საბანკო მომსახურებით სარგებლობა ყოველდღიურობის ნაწილია, ვინც აქტიურად მოიხმარს არასაბანკო პროდუქტებსა და შეთავაზებებს და </p>
+              </div>
+            </div>
+            <div class="slide-feature-second">
+              <img class="slide-img" src="img/package img/package-img-2.png">
+              <div class="slide-content-box">
+                <h3 class="package-category">პრემიუმი<h3>
+                <p class="package-content">თიბისი კონცეპტის მომხმარებლებთან ურთიერთობის ერთ-ერთი ფორმატი - პრემიუმ ნაკრები, სხვა საბანკო და არასაბანკო უპირატესობებთან ერთად, პირადი ბანკირის მომსახურებას გულისხმობს. პირადი ბანკირის მთავარი ამოცანა</p>
+              </div>
+            </div>
+            <div class="slide-feature-second">
+              <img class="slide-img" src="img/package img/package-img-3.png">
+              <div class="slide-content-box">
+                <h3 class="package-category">360<h3>
+                <p class="package-content">თიბისი კონცეპტის 360 ნაკრები განკუთვნილია მათთვის, ვისაც სხვა საბანკო და არასაბანკო უპიტარესობებთან ერთად, კიდევ უფრო მეტი ფინანსური ინსტრუმენტი და გაზრდილი შესაძლებლობები ესაჭიროება</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-personalBanker">
+          <div class="hero-banker">
+            <div class="hero-text-box">
+              <h1 class="heading-primary">პირადი ბანკირი</h1>
+              <p class="description">თქვენი სანდო პარტნიორი ფინანსურ რჩევებსა და ოპერაციებში</p>
+              <button class="btn-cta">
+                <a class="btn-arrow-box" href="#">  
+                  <ion-icon class="arrow-icon arrow-icon-btn" name="arrow-forward-outline"></ion-icon>
+                  <p class="btn-text">გაიგეთ მეტი<p>
+                </a>
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="section-awards">
+          <div class="heading-countainer ">  
+            <h2 class="heading-secondary">ჯილდოები</h2>
+          </div>
+          <div class="awards-countainer">
+            <div class="award">
+              <img class="award-logo" src="img/awards-logo/award-logo-1.png">
+              <h3 class="heading-awards">საუკეთესო პერსონალური საბანკო მომსახურება საქართველოში 2024</h3>
+              <p class="company-title" >The Global Finance</p>
+            </div>
+            <div class="award">
+              <img class="award-logo" src="img/awards-logo/award-logo-2.png">
+              <h3 class="heading-awards">საუკეთესო პერსონალური საბანკო მომსახურება საქართველოში 2024</h3>
+              <p class="company-title" >The Global Finance</p>
+            </div>
+            <div class="award">
+              <img class="award-logo" src="img/awards-logo/award-logo-1.png">
+              <h3 class="heading-awards">საუკეთესო პერსონალური საბანკო მომსახურება საქართველოში 2024</h3>
+              <p class="company-title" >The Global Finance</p>
+            </div>
+            <div class="award">
+              <img class="award-logo" src="img/awards-logo/award-logo-3.png">
+              <h3 class="heading-awards">საუკეთესო პერსონალური საბანკო მომსახურება საქართველოში 2024</h3>
+              <p class="company-title" >The Global Finance</p>
+            </div>
+          </div>
+        </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-countainer">
+        <button class="dropdown-btn">
+          <span class="footer-heading">პროდუქტები</span>
+          <span><ion-icon class="dropdown-icon" name="chevron-down-outline"></ion-icon></span>
+        </button>
+        <div class="dropdown-countainer">
+          <div class="dropdown-list-countainer">
+            <a href="#">ნაკრები</a>
+            <a href="#">პერსონალური ბანკირი</a>
+          </div>
+        </div>
+        <button class="dropdown-btn">
+          <span class="footer-heading">Lifestyle</span>
+          <span><ion-icon class="dropdown-icon" name="chevron-down-outline"></ion-icon></span>
+        </button>
+        <div class="dropdown-countainer">
+          <div class="dropdown-list-countainer">
+            <a href="#">შეთავაზებები</a>
+            <a href="#">ღონისძიებები</a>
+          </div>
+        </div>
+        <button class="dropdown-btn">
+          <span class="footer-heading">კონცეპტის სივრცე</span>
+          <span><ion-icon class="dropdown-icon" name="chevron-down-outline"></ion-icon></span>
+        </button>
+        <div class="dropdown-countainer">
+          <div class="dropdown-list-countainer">
+            <a href="#">ბიბლიოთეკა</a>
+            <a href="#">კაფე</a>
+          </div>
+        </div>
+      </div>
+      <div class="contacts-countainer">
+        <div class="contacts-info">
+          <span class="footer-heading">დაგვიკავშირდით:</span>
+          <div class="align-vertical">
+            <div class="flex-align">
+              <ion-icon name="call"></ion-icon>
+              <p>+995 32 27 27 28</p>
+            </div>
+            <div class="flex-align">
+              <ion-icon name="mail-open"></ion-icon>
+              <p>info@tbcconcept.ge</p>
+            </div>
+            <div class="flex-align">
+              <ion-icon name="location"></ion-icon>
+              <p>ფილიალები</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="socialNetworks-info">
+            <span class="footer-heading">სოციალური ქსელები:</span>
+            <div>
+              <ion-icon name="logo-facebook"></ion-icon>
+              <ion-icon name="logo-instagram"></ion-icon>
+            </div>
+        </div>
+      </footer>
+  
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
+    
