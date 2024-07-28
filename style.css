@@ -9,7 +9,6 @@
 }
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
 }
 
 body {
@@ -29,7 +28,7 @@ body {
 }
 .header-countainer {
   display: flex;
-  justify-content: space-between;
+  gap: 20rem;
   align-items: center;
   background-color: #fff;
 
@@ -66,7 +65,9 @@ body {
 .tbc-logo-large {
   display: none;
 }
-
+.header-countainer-desktop {
+  display: none;
+}
 /* STICKY NAVIGATION */
 
 .sticky {
@@ -81,33 +82,39 @@ body {
   z-index: 999;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
 }
-/* CHECKBOX */
+/*////////////////////////////////////*
+//////// /* CHECKBOX - icons navigation*/
 .navigation-checkbox {
   display: none;
 }
 .navigation-button {
-  background-color: #fff;
-  height: 6rem;
-  width: 6rem;
+  background-color: hsl(0, 0%, 100%);
+  height: 7rem;
+  width: 7rem;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
   border-radius: 50%;
   z-index: 2000;
   box-shadow: 0 1rem 3rem rgba(black, 1);
+  text-align: center;
+  cursor: pointer;
 }
-/*
+
 .navigation-background {
   height: 6rem;
   width: 6rem;
   border-radius: 50%;
   position: fixed;
-  top: 6.5rem;
-  right: 6.5rem;
-  background-image: radial-gradient(#fff, #999);
+  top: 1.5rem;
+  right: 1.5rem;
+  background-image: radial-gradient(#fff, #0f0e0e10);
   z-index: 1000;
-  
-  transform: scale(80);
-  }*/
+  transition: transform 0.5s;
+}
 .navigation-nav {
   height: 100vh;
+  width: 100%;
   position: fixed;
   top: 0;
   right: 0;
@@ -116,16 +123,15 @@ body {
   opacity: 0;
   width: 0;
 }
-
 .navigation-list {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 15%;
+  left: 0;
+  /*transform: translate(-50%, -50%);*/
   list-style: none;
   text-align: center;
+  width: 100%;
 }
-
 .navigation-checkbox:checked ~ .navigation-background {
   transform: scale(80);
 }
@@ -133,11 +139,11 @@ body {
   opacity: 1;
   width: 100%;
 }
-
-/*NAVIGATION ICON*/
+/*////////////////////////////////////*
+/////////*   NAVIGATION ICON    */
 .navigation-icon {
   position: relative;
-  margin-top: 1.8rem;
+  margin-top: 3.5rem;
 }
 .navigation-icon,
 .navigation-icon::before,
@@ -185,7 +191,7 @@ body {
 }
 .container-primary {
   background-color: #f9fafa;
-  padding: 5rem 0 5rem 3rem;
+  padding: 7rem 0 5rem 3rem;
 }
 .countainer-primary-text {
   font-size: 1.2rem;
@@ -207,7 +213,7 @@ body {
   padding: 0 2rem 1rem 2rem;
 
   position: absolute;
-  bottom: 0;
+  bottom: 10%;
 }
 .description {
   font-size: 1.7rem;
@@ -232,14 +238,14 @@ body {
 /* Package text */
 /**************************/
 .section-package-concept {
-  padding: 4rem 0;
+  padding: 4rem 2rem;
 }
 
 .about-package {
   font-size: 2.5rem;
   font-weight: 600;
-  letter-spacing: 0.75px;
-  line-height: 1.5;
+  letter-spacing: 2px;
+  line-height: 1.8;
   color: #141719;
 }
 /**************************/
@@ -248,20 +254,8 @@ body {
 .section-package {
   padding: 2rem 0;
 }
-
-.package-countainer {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
 .package {
   position: relative;
-}
-.package-img {
-  width: 100%;
-  border-radius: 3%;
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 }
 .package-text-box {
   display: flex;
@@ -289,17 +283,19 @@ body {
 /* RESULTS */
 /**************************/
 .countainer-results {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 3rem;
   padding: 0 2rem;
   margin: 0 auto;
+  width: 100%;
 }
+
 .result-box {
-  min-width: 34rem;
+  /*min-width: 34rem;*/
   padding: 4rem 2rem;
   background-color: #fff;
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0);
 }
 .amount {
   font-size: 3rem;
@@ -322,40 +318,42 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /*padding-right: 2.5rem;*/
-  margin-bottom: 2rem;
+  padding: 0 5rem 0 2rem;
 }
-.slider-counatiner {
-  white-space: nowrap;
-  overflow: auto;
-}
+
 .slider {
-  /*max-width: 100rem;*/
-  height: 40rem;
-  margin: 0 2rem;
+  white-space: nowrap;
+  height: 50rem;
+  margin: 0 4rem;
+  overflow: auto;
   overflow: hidden;
 
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  gap: 3rem;
 }
 .slide {
-  width: 50%;
-  height: 40rem;
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  width: 45%;
+  height: 45rem;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0);
   object-fit: cover;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .offer-img {
   width: 100%;
   height: 100%;
-  border-radius: 5px;
+  border-radius: 9px;
   object-fit: cover;
 }
-.slider-content {
+.offer-content {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  margin-left: 3rem;
+  margin-top: 3rem;
 }
 
 /*
@@ -389,9 +387,10 @@ body {
 /**************************/
 /* DIGITAL BANK */
 /**************************/
+/*
 .section-digital {
   min-width: 34rem;
-}
+}*/
 .countainer-digital {
   padding: 0 2rem 4rem 2rem;
 
@@ -423,81 +422,122 @@ body {
   background-color: #f9fafa;
   border: 1px solid #182cc0;
 }
+.digital-heading {
+  display: none;
+}
+.download-app-box {
+  display: none;
+}
 /**************************/
 /* PACKAGE DETAIL*/
 /**************************/
 .section-package-detail {
+  padding: 5rem 0;
 }
 .slider-countainer {
-  height: 34rem;
-  padding: 2rem;
-  position: relative;
-  overflow: hidden;
-}
-.slide-feature-second {
-  position: absolute;
-  top: 0;
-  width: 90%;
+  white-space: nowrap;
   height: 50rem;
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.121);
+  margin: 0 4rem;
+  overflow: auto;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
-.slide-img {
-  width: 100%;
-  border-radius: 5px;
+.products-slider {
+  width: 45%;
+  height: 45rem;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.104);
+  object-fit: cover;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  padding: 3rem;
 }
 .slide-content-box {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 1rem 2rem 0 1rem;
+  overflow: hidden;
+  padding: 0 3rem;
 }
+.slide-img {
+  width: 100%;
+  height: 70%;
+  border-radius: 9px;
+  object-fit: cover;
+}
+
 .package-category {
   color: #141719;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 700;
   margin-top: 1rem;
 }
 .package-content {
-  font-size: 1.2rem;
-  line-height: 1;
-  letter-spacing: 0.075px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.8px;
 }
-.heading {
-  margin-bottom: 1.5rem;
-}
+/*
+
 /**************************/
 /* PERSONAL BANKER*/
 /**************************/
 .section-personalBanker {
   padding: 6rem 0;
 }
+
 .hero-banker {
   height: 80vh;
   background-image: url(img/personal-banker.png);
   background-size: cover;
   background-position: top;
   position: relative;
+  padding: 0 3rem;
 }
+
 /**************************/
 /*      AWARDS           */
 /************************/
 .awards-countainer {
-  min-width: 34rem;
-  padding: 0 4rem 0 2rem;
+  white-space: nowrap;
+  height: 25rem;
+  margin: 0 2rem;
+
+  overflow: auto;
+  overflow: hidden;
+  display: flex;
+  gap: 3rem;
+
+  font-size: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  position: relative;
+}
+.award::-webkit-scrollbar {
+  display: none;
 }
 .award {
-  padding: 2rem 3rem 3rem 3rem;
+  width: 50%;
+  height: 25rem;
+  object-fit: cover;
+  padding: 2rem 3rem;
 
   display: flex;
   flex-direction: column;
   gap: 2rem;
 
   border-radius: 9px;
-  background-color: #fff;
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.121);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.018);
 }
 .award-logo {
   width: 30%;
+  height: 25%;
 }
 .heading-awards {
   font-size: 1.5rem;
@@ -509,6 +549,60 @@ body {
 .company-title {
   font-size: 1.2rem;
 }
+.slider-scrollbar {
+  height: 2px;
+  width: 95%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+.scrollbar-track {
+  height: 2px;
+  width: 95%;
+  background-color: #ccc;
+  position: relative;
+  border-radius: 4px;
+}
+.slider-scrollbar:hover .scrollbar-track {
+  height: 4px;
+}
+.scrollbar-thumb {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  background-color: #000;
+  cursor: grab;
+}
+.slider-scrollbar .scrollbar-track:active {
+  cursor: grabbing;
+  height: 8px;
+  top: -2px;
+}
+.scrollbar-thumb::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10px;
+  bottom: -10px;
+}
+.scrollbar-btn {
+  position: absolute;
+  top: 90%;
+
+  height: 50px;
+  width: 50px;
+  color: rgba(0, 0, 255, 0.376);
+  font-size: 2rem;
+  cursor: pointer;
+}
+#prev-slide {
+  left: -20px;
+}
+#next-slide {
+  right: -20px;
+}
+
 /**************************/
 /*    dropdown nav       */
 /************************/
@@ -543,8 +637,8 @@ body {
   gap: 2rem;
   background-color: #fff;
 }
-.dropdown-list-countainer a {
-  display: inline-block;
+.dropdownNav-list-countainer a {
+  /*display: inline-block;*/
   text-decoration: none;
   font-size: 1.7rem;
   font-weight: 500;

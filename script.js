@@ -19,6 +19,20 @@ dropdownBtn.forEach(function (btn) {
 });
 /****************************************** */
 /****************************************** */
+const dropdownBtnNav = document.querySelectorAll(".dropdown-nav");
+
+dropdownBtnNav.forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    const dropdownContent = btn.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+});
+/****************************************** */
+/****************************************** */
 /******************************************** */
 ///////////////////////////////////////
 // Slider
@@ -73,6 +87,10 @@ const slider = function () {
     e.key === "ArrowRight" && nextSlide();
   });
 
+  let isDragStart = false;
+  let prevPageX;
+  let prevScrollLeft;
+
   const dragStart = (e) => {
     //updating global variables value on mouse down event
     isDragStart = true;
@@ -97,6 +115,7 @@ const slider = function () {
 };
 slider();
 */
+/*
 const slider = document.querySelector(".slider");
 const slides = document.querySelectorAll(".slide");
 
@@ -112,12 +131,12 @@ slider.addEventListener("mousedown", (e) => {
   //console.log(startX);
 });
 
-slider.addEventListener("mouseleave", () => {
+slider.addEventListener("mouseleave", (e) => {
   e.preventDefault();
   isDown = false;
 });
 
-slider.addEventListener("mouseup", () => {
+slider.addEventListener("mouseup", (e) => {
   e.preventDefault();
   isDown = false;
 });
@@ -128,4 +147,131 @@ slider.addEventListener("mousemove", (e) => {
   const x = e.pageX - slider.offsetLeft;
   const walk = x - startX;
   slider.scrollLeft = scrollLeft - walk;
+});*/
+/************************************************* */
+/************************************************* */
+/************************************************* */
+/************************************************** */
+/************************************************** */
+/*
+const awardsCountainer = document.querySelector(".awards-countainer");
+awardsCountainer;
+
+let isDown = false;
+let startX;
+let scrollLeft;
+
+awardsCountainer.addEventListener("mousedown", (e) => {
+  e.preventDefault();
+  isDown = true;
+  startX = e.pageX - awardsCountainer.offsetLeft;
+  scrollLeft = awardsCountainer.scrollLeft;
+  //console.log(startX);
 });
+
+awardsCountainer.addEventListener("mouseleave", (e) => {
+  e.preventDefault();
+  isDown = false;
+});
+
+awardsCountainer.addEventListener("mouseup", (e) => {
+  e.preventDefault();
+  isDown = false;
+});
+
+awardsCountainer.addEventListener("mousemove", (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - awardsCountainer.offsetLeft;
+  const walk = x - startX;
+  awardsCountainer.scrollLeft = scrollLeft - walk;
+});
+*/
+/////////////////////////////////////////////
+/////// SLIDER functionality
+/************************************************** */
+/************************************************** */
+const awardsCountainer = document.querySelector(".awards-countainer");
+const slider = document.querySelector(".slider");
+const productsSlider = document.querySelector(".slider-countainer");
+const packageSlider = document.querySelector(".package-countainer");
+
+const sliderFunctionality = function (slider) {
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+
+  const dragStart = (e) => {
+    e.preventDefault();
+    isDown = true;
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+  };
+
+  const dragging = (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - slider.offsetLeft;
+    const walk = x - startX;
+    slider.scrollLeft = scrollLeft - walk;
+  };
+  const dragStop = (e) => {
+    e.preventDefault();
+    isDown = false;
+  };
+  const dragleave = (e) => {
+    e.preventDefault();
+    isDown = false;
+  };
+
+  slider.addEventListener("mousedown", dragStart);
+  slider.addEventListener("mousemove", dragging);
+  slider.addEventListener("mouseup", dragStop);
+  slider.addEventListener("mouseleave", dragleave);
+};
+console.log(sliderFunctionality(awardsCountainer));
+console.log(sliderFunctionality(slider));
+console.log(sliderFunctionality(productsSlider));
+console.log(sliderFunctionality(packageSlider));
+
+/*//
+/********** */
+/*********** */
+/*
+const awardsCountainer = document.querySelector(".awards-countainer");
+
+const sliderFunctionality = function (slider) {
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+
+  const dragStart = (e) => {
+    e.preventDefault();
+    isDown = true;
+    startX = e.pageX - awardsCountainer.offsetLeft;
+    scrollLeft = awardsCountainer.scrollLeft;
+  };
+
+  const dragging = (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - awardsCountainer.offsetLeft;
+    const walk = x - startX;
+    awardsCountainer.scrollLeft = scrollLeft - walk;
+  };
+  const dragStop = (e) => {
+    e.preventDefault();
+    isDown = false;
+  };
+  const dragleave = (e) => {
+    e.preventDefault();
+    isDown = false;
+  };
+
+  awardsCountainer.addEventListener("mousedown", dragStart);
+  awardsCountainer.addEventListener("mousemove", dragging);
+  awardsCountainer.addEventListener("mouseup", dragStop);
+  awardsCountainer.addEventListener("mouseleave", dragleave);
+};
+console.log(sliderFunctionality(awardsCountainer));
+*/
